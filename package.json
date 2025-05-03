@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jwt-decode": "^4.0.0",
+    "material-ui-confirm": "^4.0.0"
+  }
+}

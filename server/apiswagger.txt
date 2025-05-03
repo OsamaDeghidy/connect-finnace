@@ -1,0 +1,1403 @@
+Swagger UI
+http://127.0.0.1:8000/api/docs/?format=openapi
+Explore
+Financial Management System API
+ v1 
+[ Base URL: 127.0.0.1:8000/api/v1 ]
+http://127.0.0.1:8000/api/docs/?format=openapi
+API for Financial Management System
+
+Terms of service
+Contact the developer
+BSD License
+Schemes
+
+http
+Django osama@gmail.com Django Logout
+Authorize
+Filter by tag
+accounts-payable
+
+
+GET
+/accounts-payable/dashboard/summary/
+accounts-payable_dashboard_summary_list
+
+
+GET
+/accounts-payable/payables/
+accounts-payable_payables_list
+
+
+POST
+/accounts-payable/payables/
+accounts-payable_payables_create
+
+
+GET
+/accounts-payable/payables/transactions/{id}/
+accounts-payable_payables_transactions_read
+
+
+PUT
+/accounts-payable/payables/transactions/{id}/
+accounts-payable_payables_transactions_update
+
+
+PATCH
+/accounts-payable/payables/transactions/{id}/
+accounts-payable_payables_transactions_partial_update
+
+
+DELETE
+/accounts-payable/payables/transactions/{id}/
+accounts-payable_payables_transactions_delete
+
+
+GET
+/accounts-payable/payables/{id}/
+accounts-payable_payables_read
+
+
+PUT
+/accounts-payable/payables/{id}/
+accounts-payable_payables_update
+
+
+PATCH
+/accounts-payable/payables/{id}/
+accounts-payable_payables_partial_update
+
+
+DELETE
+/accounts-payable/payables/{id}/
+accounts-payable_payables_delete
+
+
+GET
+/accounts-payable/payables/{payable_id}/transactions/
+accounts-payable_payables_transactions_list
+
+
+POST
+/accounts-payable/payables/{payable_id}/transactions/
+accounts-payable_payables_transactions_create
+
+
+GET
+/accounts-payable/reminders/
+accounts-payable_reminders_list
+
+
+GET
+/accounts-payable/reminders/{id}/
+accounts-payable_reminders_read
+
+
+PUT
+/accounts-payable/reminders/{id}/
+accounts-payable_reminders_update
+
+
+PATCH
+/accounts-payable/reminders/{id}/
+accounts-payable_reminders_partial_update
+
+
+POST
+/accounts-payable/reminders/{id}/send/
+accounts-payable_reminders_send_create
+
+
+POST
+/accounts-payable/reports/payables/
+accounts-payable_reports_payables_create
+
+
+POST
+/accounts-payable/reports/upcoming-payments/
+accounts-payable_reports_upcoming-payments_create
+
+
+GET
+/accounts-payable/suppliers/
+accounts-payable_suppliers_list
+
+
+POST
+/accounts-payable/suppliers/
+accounts-payable_suppliers_create
+
+
+GET
+/accounts-payable/suppliers/{id}/
+accounts-payable_suppliers_read
+
+
+PUT
+/accounts-payable/suppliers/{id}/
+accounts-payable_suppliers_update
+
+
+PATCH
+/accounts-payable/suppliers/{id}/
+accounts-payable_suppliers_partial_update
+
+
+DELETE
+/accounts-payable/suppliers/{id}/
+accounts-payable_suppliers_delete
+
+accounts-receivable
+
+
+GET
+/accounts-receivable/banks/
+accounts-receivable_banks_list
+
+
+POST
+/accounts-receivable/banks/
+accounts-receivable_banks_create
+
+
+GET
+/accounts-receivable/banks/{id}/
+accounts-receivable_banks_read
+
+
+PUT
+/accounts-receivable/banks/{id}/
+accounts-receivable_banks_update
+
+
+PATCH
+/accounts-receivable/banks/{id}/
+accounts-receivable_banks_partial_update
+
+
+DELETE
+/accounts-receivable/banks/{id}/
+accounts-receivable_banks_delete
+
+
+GET
+/accounts-receivable/clients/
+accounts-receivable_clients_list
+
+
+POST
+/accounts-receivable/clients/
+accounts-receivable_clients_create
+
+
+GET
+/accounts-receivable/clients/{id}/
+accounts-receivable_clients_read
+
+
+PUT
+/accounts-receivable/clients/{id}/
+accounts-receivable_clients_update
+
+
+PATCH
+/accounts-receivable/clients/{id}/
+accounts-receivable_clients_partial_update
+
+
+DELETE
+/accounts-receivable/clients/{id}/
+accounts-receivable_clients_delete
+
+
+GET
+/accounts-receivable/dashboard/summary/
+accounts-receivable_dashboard_summary_list
+
+
+GET
+/accounts-receivable/receivables/
+accounts-receivable_receivables_list
+
+
+POST
+/accounts-receivable/receivables/
+accounts-receivable_receivables_create
+
+
+GET
+/accounts-receivable/receivables/transactions/{id}/
+accounts-receivable_receivables_transactions_read
+
+
+PUT
+/accounts-receivable/receivables/transactions/{id}/
+accounts-receivable_receivables_transactions_update
+
+
+PATCH
+/accounts-receivable/receivables/transactions/{id}/
+accounts-receivable_receivables_transactions_partial_update
+
+
+DELETE
+/accounts-receivable/receivables/transactions/{id}/
+accounts-receivable_receivables_transactions_delete
+
+
+GET
+/accounts-receivable/receivables/{id}/
+accounts-receivable_receivables_read
+
+
+PUT
+/accounts-receivable/receivables/{id}/
+accounts-receivable_receivables_update
+
+
+PATCH
+/accounts-receivable/receivables/{id}/
+accounts-receivable_receivables_partial_update
+
+
+DELETE
+/accounts-receivable/receivables/{id}/
+accounts-receivable_receivables_delete
+
+
+GET
+/accounts-receivable/receivables/{receivable_id}/transactions/
+accounts-receivable_receivables_transactions_list
+
+
+POST
+/accounts-receivable/receivables/{receivable_id}/transactions/
+accounts-receivable_receivables_transactions_create
+
+
+POST
+/accounts-receivable/reports/receivables/
+accounts-receivable_reports_receivables_create
+
+accounts
+
+
+POST
+/accounts/password/change/
+accounts_password_change_create
+
+
+POST
+/accounts/password/reset/
+accounts_password_reset_create
+
+
+POST
+/accounts/password/reset/confirm/
+accounts_password_reset_confirm_create
+
+
+POST
+/accounts/token/
+accounts_token_create
+
+
+POST
+/accounts/token/refresh/
+accounts_token_refresh_create
+
+
+POST
+/accounts/token/verify/
+accounts_token_verify_create
+
+
+GET
+/accounts/users/
+accounts_users_list
+
+
+POST
+/accounts/users/
+accounts_users_create
+
+
+GET
+/accounts/users/me/
+accounts_users_me_list
+
+
+PUT
+/accounts/users/me/
+accounts_users_me_update
+
+
+GET
+/accounts/users/{id}/
+accounts_users_read
+
+
+PUT
+/accounts/users/{id}/
+accounts_users_update
+
+
+PATCH
+/accounts/users/{id}/
+accounts_users_partial_update
+
+
+DELETE
+/accounts/users/{id}/
+accounts_users_delete
+
+bank-obligations
+
+
+GET
+/bank-obligations/dashboard/summary/
+bank-obligations_dashboard_summary_list
+
+
+GET
+/bank-obligations/obligations/
+bank-obligations_obligations_list
+
+
+POST
+/bank-obligations/obligations/
+bank-obligations_obligations_create
+
+
+GET
+/bank-obligations/obligations/payments/{id}/
+bank-obligations_obligations_payments_read
+
+
+PUT
+/bank-obligations/obligations/payments/{id}/
+bank-obligations_obligations_payments_update
+
+
+PATCH
+/bank-obligations/obligations/payments/{id}/
+bank-obligations_obligations_payments_partial_update
+
+
+DELETE
+/bank-obligations/obligations/payments/{id}/
+bank-obligations_obligations_payments_delete
+
+
+GET
+/bank-obligations/obligations/{id}/
+bank-obligations_obligations_read
+
+
+PUT
+/bank-obligations/obligations/{id}/
+bank-obligations_obligations_update
+
+
+PATCH
+/bank-obligations/obligations/{id}/
+bank-obligations_obligations_partial_update
+
+
+DELETE
+/bank-obligations/obligations/{id}/
+bank-obligations_obligations_delete
+
+
+GET
+/bank-obligations/obligations/{obligation_id}/payments/
+bank-obligations_obligations_payments_list
+
+
+POST
+/bank-obligations/obligations/{obligation_id}/payments/
+bank-obligations_obligations_payments_create
+
+
+POST
+/bank-obligations/payment-schedule/
+bank-obligations_payment-schedule_create
+
+
+POST
+/bank-obligations/reports/obligations/
+bank-obligations_reports_obligations_create
+
+calendar
+
+
+GET
+/calendar/events/
+calendar_events_list
+
+
+POST
+/calendar/events/
+calendar_events_create
+
+
+POST
+/calendar/events/export_all_to_google/
+calendar_events_export_all_to_google
+
+
+POST
+/calendar/events/sync_events/
+calendar_events_sync_events
+
+
+GET
+/calendar/events/{id}/
+calendar_events_read
+
+
+PUT
+/calendar/events/{id}/
+calendar_events_update
+
+
+PATCH
+/calendar/events/{id}/
+calendar_events_partial_update
+
+
+DELETE
+/calendar/events/{id}/
+calendar_events_delete
+
+
+POST
+/calendar/events/{id}/export_to_google/
+calendar_events_export_to_google
+
+cash-transactions
+
+
+GET
+/cash-transactions/accounts/
+cash-transactions_accounts_list
+
+
+POST
+/cash-transactions/accounts/
+cash-transactions_accounts_create
+
+
+GET
+/cash-transactions/accounts/transactions/{id}/
+cash-transactions_accounts_transactions_read
+
+
+PUT
+/cash-transactions/accounts/transactions/{id}/
+cash-transactions_accounts_transactions_update
+
+
+PATCH
+/cash-transactions/accounts/transactions/{id}/
+cash-transactions_accounts_transactions_partial_update
+
+
+DELETE
+/cash-transactions/accounts/transactions/{id}/
+cash-transactions_accounts_transactions_delete
+
+
+GET
+/cash-transactions/accounts/{account_id}/transactions/
+cash-transactions_accounts_transactions_list
+
+
+POST
+/cash-transactions/accounts/{account_id}/transactions/
+cash-transactions_accounts_transactions_create
+
+
+GET
+/cash-transactions/accounts/{id}/
+cash-transactions_accounts_read
+
+
+PUT
+/cash-transactions/accounts/{id}/
+cash-transactions_accounts_update
+
+
+PATCH
+/cash-transactions/accounts/{id}/
+cash-transactions_accounts_partial_update
+
+
+DELETE
+/cash-transactions/accounts/{id}/
+cash-transactions_accounts_delete
+
+
+GET
+/cash-transactions/categories/
+cash-transactions_categories_list
+
+
+POST
+/cash-transactions/categories/
+cash-transactions_categories_create
+
+
+GET
+/cash-transactions/categories/{id}/
+cash-transactions_categories_read
+
+
+PUT
+/cash-transactions/categories/{id}/
+cash-transactions_categories_update
+
+
+PATCH
+/cash-transactions/categories/{id}/
+cash-transactions_categories_partial_update
+
+
+DELETE
+/cash-transactions/categories/{id}/
+cash-transactions_categories_delete
+
+
+GET
+/cash-transactions/dashboard/summary/
+cash-transactions_dashboard_summary_list
+
+
+POST
+/cash-transactions/reports/cash-flow/
+cash-transactions_reports_cash-flow_create
+
+
+POST
+/cash-transactions/reports/transactions/
+cash-transactions_reports_transactions_create
+
+
+GET
+/cash-transactions/transactions/
+cash-transactions_transactions_list
+
+
+POST
+/cash-transactions/transactions/
+cash-transactions_transactions_create
+
+
+GET
+/cash-transactions/transactions/{id}/
+cash-transactions_transactions_read
+
+
+PUT
+/cash-transactions/transactions/{id}/
+cash-transactions_transactions_update
+
+
+PATCH
+/cash-transactions/transactions/{id}/
+cash-transactions_transactions_partial_update
+
+
+DELETE
+/cash-transactions/transactions/{id}/
+cash-transactions_transactions_delete
+
+
+Models
+PayableTransaction{
+id	integer
+title: ID
+readOnly: true
+transaction_type*	string
+title: Transaction type
+Enum:
+Array [ 3 ]
+amount*	string($decimal)
+title: Amount
+transaction_date	string($date)
+title: Transaction date
+reference	string
+title: Reference
+maxLength: 100
+notes	string
+title: Notes
+created_at	string($date-time)
+title: Created at
+readOnly: true
+payable*	integer
+title: Payable
+created_by	integer
+title: Created by
+readOnly: true
+x-nullable: true
+ 
+}
+PaymentReminder{
+id	integer
+title: ID
+readOnly: true
+reminder_type*	string
+title: Reminder type
+Enum:
+Array [ 4 ]
+reminder_date*	string($date)
+title: Reminder date
+sent	boolean
+title: Sent
+sent_date	string($date-time)
+title: Sent date
+readOnly: true
+x-nullable: true
+notes	string
+title: Notes
+payable*	integer
+title: Payable
+sent_by	integer
+title: Sent by
+readOnly: true
+x-nullable: true
+ 
+}
+AccountPayable{
+id	integer
+title: ID
+readOnly: true
+bank_name	string
+title: Bank name
+readOnly: true
+supplier_name	string
+title: Supplier name
+readOnly: true
+transactions	[
+readOnly: true
+PayableTransaction{
+id	ID[...]
+transaction_type*	Transaction type[...]
+amount*	Amount[...]
+transaction_date	Transaction date[...]
+reference	Reference[...]
+notes	Notes[...]
+created_at	Created at[...]
+payable*	Payable[...]
+created_by	Created by[...]
+ 
+}]
+reminders	[
+readOnly: true
+PaymentReminder{
+id	ID[...]
+reminder_type*	Reminder type[...]
+reminder_date*	Reminder date[...]
+sent	Sent[...]
+sent_date	Sent date[...]
+notes	Notes[...]
+payable*	Payable[...]
+sent_by	Sent by[...]
+ 
+}]
+days_until_due	integer
+title: Days until due
+readOnly: true
+transaction_date	string($date)
+title: Transaction date
+due_date*	string($date)
+title: Due date
+amount*	string($decimal)
+title: Amount
+check_number*	string
+title: Check number
+maxLength: 50
+minLength: 1
+payment_number	string
+title: Payment number
+readOnly: true
+minLength: 1
+invoice_number	string
+title: Invoice number
+maxLength: 50
+invoice_date	string($date)
+title: Invoice date
+x-nullable: true
+status	string
+title: Status
+Enum:
+Array [ 10 ]
+notes	string
+title: Notes
+maxLength: 500
+created_at	string($date-time)
+title: Created at
+readOnly: true
+updated_at	string($date-time)
+title: Updated at
+readOnly: true
+last_reminder_date	string($date)
+title: Last reminder date
+readOnly: true
+x-nullable: true
+supplier*	integer
+title: Supplier
+bank*	integer
+title: Bank
+created_by	integer
+title: Created by
+readOnly: true
+x-nullable: true
+ 
+}
+Supplier{
+id	integer
+title: ID
+readOnly: true
+total_outstanding	string($decimal)
+title: Total outstanding
+readOnly: true
+name*	string
+title: Supplier name
+maxLength: 200
+minLength: 1
+arabic_name	string
+title: Supplier name (Arabic)
+maxLength: 200
+contact_person	string
+title: Contact person
+maxLength: 100
+phone	string
+title: Phone
+pattern: ^\+?1?\d{9,15}$
+maxLength: 17
+email	string($email)
+title: Email
+maxLength: 254
+address	string
+title: Address
+tax_number	string
+title: Tax number
+maxLength: 50
+payment_terms	integer
+title: Payment terms (days)
+maximum: 9223372036854776000
+minimum: 0
+pdf_file	string($uri)
+title: PDF file
+readOnly: true
+x-nullable: true
+is_active	boolean
+title: Active
+notes	string
+title: Notes
+maxLength: 500
+created_at	string($date-time)
+title: Created at
+readOnly: true
+updated_at	string($date-time)
+title: Updated at
+readOnly: true
+created_by	integer
+title: Created by
+readOnly: true
+x-nullable: true
+ 
+}
+Bank{
+id	integer
+title: ID
+readOnly: true
+name*	string
+title: Bank name
+maxLength: 100
+minLength: 1
+arabic_name*	string
+title: Bank name (Arabic)
+maxLength: 100
+minLength: 1
+branch	string
+title: Branch
+maxLength: 100
+swift_code	string
+title: SWIFT code
+maxLength: 20
+contact_person	string
+title: Contact person
+maxLength: 100
+phone	string
+title: Phone
+maxLength: 20
+email	string($email)
+title: Email
+maxLength: 254
+address	string
+title: Address
+pdf_file	string($uri)
+title: PDF file
+readOnly: true
+x-nullable: true
+is_active	boolean
+title: Active
+created_at	string($date-time)
+title: Created at
+readOnly: true
+updated_at	string($date-time)
+title: Updated at
+readOnly: true
+ 
+}
+Client{
+id	integer
+title: ID
+readOnly: true
+total_outstanding	string($decimal)
+title: Total outstanding
+readOnly: true
+name*	string
+title: Client name
+maxLength: 200
+minLength: 1
+arabic_name	string
+title: Client name (Arabic)
+maxLength: 200
+contact_person	string
+title: Contact person
+maxLength: 100
+phone	string
+title: Phone
+pattern: ^\+?1?\d{9,15}$
+maxLength: 17
+email	string($email)
+title: Email
+maxLength: 254
+address	string
+title: Address
+tax_number	string
+title: Tax number
+maxLength: 50
+credit_limit	string($decimal)
+title: Credit limit
+pdf_file	string($uri)
+title: PDF file
+readOnly: true
+x-nullable: true
+is_active	boolean
+title: Active
+notes	string
+title: Notes
+maxLength: 500
+created_at	string($date-time)
+title: Created at
+readOnly: true
+updated_at	string($date-time)
+title: Updated at
+readOnly: true
+created_by	integer
+title: Created by
+readOnly: true
+x-nullable: true
+ 
+}
+ReceivableTransaction{
+id	integer
+title: ID
+readOnly: true
+transaction_type*	string
+title: Transaction type
+Enum:
+Array [ 5 ]
+amount*	string($decimal)
+title: Amount
+transaction_date	string($date)
+title: Transaction date
+reference	string
+title: Reference
+maxLength: 100
+notes	string
+title: Notes
+created_at	string($date-time)
+title: Created at
+readOnly: true
+receivable*	integer
+title: Receivable
+created_by	integer
+title: Created by
+readOnly: true
+x-nullable: true
+ 
+}
+AccountReceivable{
+id	integer
+title: ID
+readOnly: true
+bank_name	string
+title: Bank name
+readOnly: true
+client_name	string
+title: Client name
+readOnly: true
+transactions	[
+readOnly: true
+ReceivableTransaction{
+id	ID[...]
+transaction_type*	Transaction type[...]
+amount*	Amount[...]
+transaction_date	Transaction date[...]
+reference	Reference[...]
+notes	Notes[...]
+created_at	Created at[...]
+receivable*	Receivable[...]
+created_by	Created by[...]
+ 
+}]
+transaction_date	string($date)
+title: Transaction date
+due_date*	string($date)
+title: Due date
+amount*	string($decimal)
+title: Amount
+check_number*	string
+title: Check number
+maxLength: 50
+minLength: 1
+receipt_number	string
+title: Receipt number
+readOnly: true
+minLength: 1
+status	string
+title: Status
+Enum:
+Array [ 10 ]
+notes	string
+title: Notes
+maxLength: 500
+created_at	string($date-time)
+title: Created at
+readOnly: true
+updated_at	string($date-time)
+title: Updated at
+readOnly: true
+bank*	integer
+title: Bank
+client*	integer
+title: Client
+created_by	integer
+title: Created by
+readOnly: true
+x-nullable: true
+ 
+}
+TokenObtainPair{
+email*	string
+title: Email
+minLength: 1
+password*	string
+title: Password
+minLength: 1
+ 
+}
+TokenRefresh{
+refresh*	string
+title: Refresh
+minLength: 1
+access	string
+title: Access
+readOnly: true
+minLength: 1
+ 
+}
+TokenVerify{
+token*	string
+title: Token
+minLength: 1
+ 
+}
+User{
+id	integer
+title: ID
+readOnly: true
+email*	string($email)
+title: Email address
+maxLength: 254
+minLength: 1
+first_name	string
+title: First name
+maxLength: 150
+last_name	string
+title: Last name
+maxLength: 150
+role	string
+title: Role
+Enum:
+Array [ 3 ]
+phone_number	string
+title: Phone number
+pattern: ^\+?1?\d{9,15}$
+maxLength: 17
+is_two_factor_enabled	boolean
+title: Two-factor authentication
+is_active	boolean
+title: Active
+Designates whether this user should be treated as active. Unselect this instead of deleting accounts.
+
+password	string
+title: Password
+minLength: 1
+last_login	string($date-time)
+title: Last login
+readOnly: true
+x-nullable: true
+ 
+}
+ObligationPayment{
+id	integer
+title: ID
+readOnly: true
+payment_date*	string($date)
+title: Payment date
+amount*	string($decimal)
+title: Amount
+principal_portion*	string($decimal)
+title: Principal portion
+interest_portion*	string($decimal)
+title: Interest portion
+reference_number	string
+title: Reference number
+maxLength: 50
+notes	string
+title: Notes
+created_at	string($date-time)
+title: Created at
+readOnly: true
+obligation*	integer
+title: Obligation
+created_by	integer
+title: Created by
+readOnly: true
+x-nullable: true
+ 
+}
+BankObligation{
+id	integer
+title: ID
+readOnly: true
+bank_name	string
+title: Bank name
+readOnly: true
+payments	[
+readOnly: true
+ObligationPayment{
+id	ID[...]
+payment_date*	Payment date[...]
+amount*	Amount[...]
+principal_portion*	Principal portion[...]
+interest_portion*	Interest portion[...]
+reference_number	Reference number[...]
+notes	Notes[...]
+created_at	Created at[...]
+obligation*	Obligation[...]
+created_by	Created by[...]
+ 
+}]
+remaining_balance	string($decimal)
+title: Remaining balance
+readOnly: true
+progress_percentage	string($decimal)
+title: Progress percentage
+readOnly: true
+next_payment_date	string($date)
+title: Next payment date
+readOnly: true
+obligation_type*	string
+title: Obligation type
+Enum:
+Array [ 3 ]
+obligation_number	string
+title: Obligation number
+readOnly: true
+minLength: 1
+branch	string
+title: Branch
+maxLength: 100
+account_number	string
+title: Account number
+maxLength: 50
+principal_amount*	string($decimal)
+title: Principal amount
+interest_rate*	string($decimal)
+title: Interest rate (%)
+payment_frequency	string
+title: Payment frequency
+Enum:
+Array [ 5 ]
+payment_amount*	string($decimal)
+title: Payment amount
+total_payments	integer
+title: Total number of payments
+maximum: 9223372036854776000
+minimum: 0
+start_date	string($date)
+title: Start date
+x-nullable: true
+end_date	string($date)
+title: End date
+x-nullable: true
+status	string
+title: Status
+Enum:
+Array [ 4 ]
+purpose	string
+title: Purpose
+collateral	string
+title: Collateral
+guarantors	string
+title: Guarantors
+notes	string
+title: Notes
+is_active	boolean
+title: Active
+created_at	string($date-time)
+title: Created at
+readOnly: true
+updated_at	string($date-time)
+title: Updated at
+readOnly: true
+bank*	integer
+title: Bank
+created_by	integer
+title: Created by
+readOnly: true
+x-nullable: true
+ 
+}
+CalendarEvent{
+id	integer
+title: ID
+readOnly: true
+title*	string
+title: Event title
+maxLength: 200
+minLength: 1
+description	string
+title: Description
+event_type*	string
+title: Event type
+Enum:
+Array [ 5 ]
+start_date*	string($date-time)
+title: Start date
+end_date	string($date-time)
+title: End date
+x-nullable: true
+all_day	boolean
+title: All day event
+color	string
+title: Color
+readOnly: true
+minLength: 1
+receivable	integer
+title: Receivable
+x-nullable: true
+payable	integer
+title: Payable
+x-nullable: true
+obligation	integer
+title: Obligation
+x-nullable: true
+google_calendar_id	string
+title: Google Calendar ID
+maxLength: 255
+google_event_id	string
+title: Google Event ID
+maxLength: 255
+ 
+}
+CashTransaction{
+id	integer
+title: ID
+readOnly: true
+category_name	string
+title: Category name
+readOnly: true
+created_by_name	string
+title: Created by name
+readOnly: true
+transaction_type*	string
+title: Transaction type
+Enum:
+Array [ 2 ]
+amount*	string($decimal)
+title: Amount
+transaction_date	string($date)
+title: Transaction date
+reference_number	string
+title: Reference number
+readOnly: true
+minLength: 1
+description	string
+title: Description
+receipt_image	string($uri)
+title: Receipt image
+readOnly: true
+x-nullable: true
+created_at	string($date-time)
+title: Created at
+readOnly: true
+updated_at	string($date-time)
+title: Updated at
+readOnly: true
+category*	integer
+title: Category
+related_to	integer
+title: Related transaction
+x-nullable: true
+created_by	integer
+title: Created by
+readOnly: true
+x-nullable: true
+ 
+}
+CashAccountTransaction{
+id	integer
+title: ID
+readOnly: true
+transaction_details	CashTransaction{
+id	IDinteger
+title: ID
+readOnly: true
+category_name	Category namestring
+title: Category name
+readOnly: true
+created_by_name	Created by namestring
+title: Created by name
+readOnly: true
+transaction_type*	Transaction typestring
+title: Transaction type
+Enum:
+Array [ 2 ]
+amount*	Amountstring($decimal)
+title: Amount
+transaction_date	Transaction datestring($date)
+title: Transaction date
+reference_number	Reference numberstring
+title: Reference number
+readOnly: true
+minLength: 1
+description	Descriptionstring
+title: Description
+receipt_image	Receipt imagestring($uri)
+title: Receipt image
+readOnly: true
+x-nullable: true
+created_at	Created atstring($date-time)
+title: Created at
+readOnly: true
+updated_at	Updated atstring($date-time)
+title: Updated at
+readOnly: true
+category*	Categoryinteger
+title: Category
+related_to	Related transactioninteger
+title: Related transaction
+x-nullable: true
+created_by	Created byinteger
+title: Created by
+readOnly: true
+x-nullable: true
+ 
+}
+amount*	string($decimal)
+title: Amount
+notes	string
+title: Notes
+created_at	string($date-time)
+title: Created at
+readOnly: true
+account*	integer
+title: Cash account
+transaction*	integer
+title: Transaction
+ 
+}
+CashAccount{
+id	integer
+title: ID
+readOnly: true
+current_balance	string($decimal)
+title: Current balance
+readOnly: true
+account_transactions	[
+readOnly: true
+CashAccountTransaction{
+id	ID[...]
+transaction_details	CashTransaction{...}
+amount*	Amount[...]
+notes	Notes[...]
+created_at	Created at[...]
+account*	Cash account[...]
+transaction*	Transaction[...]
+ 
+}]
+name*	string
+title: Account name
+maxLength: 100
+minLength: 1
+arabic_name*	string
+title: Account name (Arabic)
+maxLength: 100
+minLength: 1
+description	string
+title: Description
+initial_balance	string($decimal)
+title: Initial balance
+is_active	boolean
+title: Active
+created_at	string($date-time)
+title: Created at
+readOnly: true
+updated_at	string($date-time)
+title: Updated at
+readOnly: true
+ 
+}
+TransactionCategory{
+id	integer
+title: ID
+readOnly: true
+subcategories	string
+title: Subcategories
+readOnly: true
+name*	string
+title: Category name
+maxLength: 100
+minLength: 1
+arabic_name*	string
+title: Category name (Arabic)
+maxLength: 100
+minLength: 1
+category_type*	string
+title: Category type
+Enum:
+Array [ 2 ]
+description	string
+title: Description
+is_active	boolean
+title: Active
+created_at	string($date-time)
+title: Created at
+readOnly: true
+updated_at	string($date-time)
+title: Updated at
+readOnly: true
+parent*	integer
+title: Parent category
+x-nullable: true
+ 
+}
